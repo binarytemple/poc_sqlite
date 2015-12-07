@@ -8,3 +8,11 @@ I've completed that setup as far as 'adding debug support'
 # OSX setup 
 
 brew install autoconf && brew install automake
+
+# Build 
+
+From a fresh copy, run :
+
+autoreconf -iv
+
+
