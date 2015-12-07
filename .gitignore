@@ -1,4 +1,5 @@
 *.a
+*.swp
 src/bin/pocsqlite
 *.gcda
 *.gcno
