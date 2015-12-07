@@ -5,9 +5,22 @@ inspiration :  http://blog.fourthbit.com/2013/06/18/creating-an-open-source-prog
 
 I've completed that setup as far as 'adding debug support'
 
-# OSX setup 
+# setup 
 
+OSX 
+```
 brew install autoconf && brew install automake
+```
+
+Clear out any non-git build artefacts
+```
+./purge
+```
+
+Configure, build and execute
+```
+autoreconf -iv && ./configure --enable-debug && make && ./src/bin/pocsqlite
+```
 
 # Build 
 
