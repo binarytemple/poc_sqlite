@@ -6,3 +6,10 @@ noinst_HEADERS = pocsqlite-base.h
 libpocsqlite_base_a_SOURCES = \
                          $(libpocsqlite_base_a_HEADERS) \
                          pocsqlite-base.c
+
+if DEBUG
+  AM_CFLAGS =-I$(top_srcdir)/src/lib -Wall -g -O3
+else
+  AM_CFLAGS =-I$(top_srcdir)/src/lib -Wall
+endif
+
